@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Crowdfunding System = Payment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+        <h1>Payment Page</h1>
+            <div class="row g-0">
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <form action='add_payment.do' method ='POST'>
+                                Your Name : &nbsp; <input type='text' class="form-control" id="name"><br/></br>
+                                Email Address : &nbsp; <input type='text' class="form-control" id="email"><br/><br/>
+                                Select Campaign : &nbsp;
+                                <select class="form-select" id="projectId">
+                                        <option value="1">Campaign 1</option>
+                                        <option value="2">Campaign 2</option>
+                                        <option value="3">Campaign 3</option>
+                                </select><br/><br/>
+                                Enter Amount (RM): &nbsp; <input type='number' class="form-control" id="amount"><br/><br/>
+                                Select Payment Method : &nbsp; 
+                                    <select class="form-select" id="payment_method">
+                                        <option value="1">Method 1</option>
+                                        <option value="2">Method 2</option>
+                                        <option value="3">Method 3</option>
+                                    </select><br/><br/>
+                                     
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Pay Now</button>
+                    </div>
+                </div>
+        </div>
+</html>
